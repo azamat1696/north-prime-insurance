@@ -1,0 +1,1 @@
+export { createPost,updatePost,getPostsJson,getPost,getPosts }  from './post';
