@@ -7,7 +7,11 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'purple-open':'#EFF0F9'
+      }
+    },
   },
   plugins: [],
 }

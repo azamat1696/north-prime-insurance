@@ -28,15 +28,15 @@ export default function MainScreen({navigation}) {
                         danışmanlarımızdan detaylı bilgi alabilirsiniz.
                     </Text>
                 </View>
-                <View className="text-center flex-row justify-around pt-5" >
+                <View className="text-center flex-row justify-around pt-2" >
 
-                    <TouchableOpacity activeOpacity="0.5">
+                    <TouchableOpacity activeOpacity="0.5" onPress={() => navigation.navigate('LoginScreen')}>
                         <View className="rounded-full border justify-center items-center">
                             <Text style={styles.button}>Giriş Yap</Text>
                         </View>
                     </TouchableOpacity>
 
-                    <TouchableOpacity activeOpacity="0.5" onPress={() => navigation.navigate('TestScreen')}>
+                    <TouchableOpacity activeOpacity="0.5" onPress={() => navigation.navigate('RegisterScreen')}>
                         <LinearGradient
                             colors={['#6F93C9','#16C9C4']}
                             start={{ x: 0.2, y: 0.4 }}
@@ -47,7 +47,7 @@ export default function MainScreen({navigation}) {
                         </LinearGradient>
                     </TouchableOpacity>
                 </View>
-                <View className="justify-center items-center pt-4">
+                <View className="justify-center items-center pt-2">
                     <Text className="text-gray-400" >
                         Üye olmadan devam et
                     </Text>
