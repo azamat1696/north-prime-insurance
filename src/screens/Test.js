@@ -11,8 +11,11 @@ export default function Test() {
     const getContent = () => {
         return <ActivityIndicator size="large"/>;
     }
+
+    // redux toolkit verileri useSelector ile alıyoruz
+    // useDispatch ile de actionları çalıştırıyoruz
     const dispatch = useDispatch();
-    const content = useSelector((state) => state.content);
+     const content = useSelector((state) => state.content);
     const loading = useSelector((state) => state.loading);
     const error = useSelector((state) => state.error);
 

@@ -24,7 +24,7 @@ const CustomToast = ({ message ,onDismiss,svg,interval=3000}) => {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        borderRadius: '50%',
+        borderRadius: 50,
         padding: 12,
          zIndex: 999,
          flexDirection: 'row', // Set flex direction to "row"

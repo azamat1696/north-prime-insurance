@@ -46,7 +46,7 @@ export function RegisterScreen({navigation}){
     const registerConfirmRef = useRef(null);
     const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(false);
     const [isBottomSheetTextOpen, setIsBottomSheetTextOpen] = useState(false);
-    const snapPoints = useMemo(() => ["75%","60%"],[]);
+    const snapPoints = useMemo(() => ["75%","65%"],[]);
     const handleSheetChange = useCallback((index) => {
         index === -1 ? setIsBottomSheetOpen(false) : setIsBottomSheetOpen(true);
         index === 1 ? setIsBottomSheetTextOpen(true) : setIsBottomSheetTextOpen(false);

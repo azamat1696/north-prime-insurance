@@ -3,13 +3,14 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export const AuthContext = createContext();
 
 export const AuthProvider = ({children}) => {
-    const [authData, setAuthData] = useState({
+    const [authData, setAuthData] = useState(null);
+/*    {
         token: 'sdsdsdsdsdsdewewewewe12121',
-        user: {
-            name: 'John Doe',
+            user: {
+        name: 'John Doe',
             email: 'sdasds@gmail.con'
-        }
-    });
+    }
+    }*/
     const [loading, setLoading] = useState(true);
  useEffect(() => {
      signIn().then( () => {

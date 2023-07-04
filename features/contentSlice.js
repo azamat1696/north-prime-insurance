@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-
+// redux toolkit
 const initialState = {
     content: null,
     loading: false,

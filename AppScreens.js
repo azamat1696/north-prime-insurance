@@ -10,7 +10,6 @@ export function AppScreens(){
 
     return(
         <Stack.Navigator>
-            <Stack.Screen name="TestScreen" component={Test} />
             <Stack.Screen  name="MainScreen" component={MainScreen} />
             <Stack.Screen name="TestScreen" component={Test} />
             <Stack.Screen name="Test2" component={Test2} />
